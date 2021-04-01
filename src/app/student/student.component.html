@@ -1,0 +1,7 @@
+<h1>Student Component</h1>
+<ul *ngFor="let st of students">
+    <li>
+        <img [src]="st.img" alt="" width="70">
+        {{st.name}} - {{st.studentCode}}
+    </li>
+</ul>

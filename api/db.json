@@ -1,0 +1,40 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Sách kinh tế"
+        },
+        {
+            "id": 2,
+            "name": "Sách kinh tế"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "Kiếm tiền tỷ mỗi ngày",
+            "price": 150000,
+            "authorId":1,
+            "categoryId": 1,
+            "image": "https://metaisach.com/wp-content/uploads/2019/07/kiem-tien-sieu-toc.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Thay đổi cs với nhân số học",
+            "price": 155800,
+            "authorId":2,
+            "categoryId": 2,
+            "image": "https://metaisach.com/wp-content/uploads/2019/07/kiem-tien-sieu-toc.jpg"
+        }
+    ],
+    "authors": [
+        {
+            "id": 1,
+            "name": "Đỗ Đăng Khoa"
+        },
+        {
+            "id": 2,
+            "name": "Lê Đỗ Quỳnh Hương"
+        }
+    ]
+}

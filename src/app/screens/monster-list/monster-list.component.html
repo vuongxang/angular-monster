@@ -1,0 +1,17 @@
+<div class="container">
+    <app-monster-form
+                (submitForm)="saveFormSubmit($event)"
+                [formObject]="updateObject"
+                >
+            </app-monster-form>
+    <h1 class="mt-4 mb-4 text-center">Monster List</h1>
+    <div class="row">
+        <div class="col-4" *ngFor="let monster of monsters">
+            <app-monster-unit
+                (updateEvent)="updateMonster($event)"
+                (delete)="parentRemove($event)"
+                [monsterData]="monster"
+            ></app-monster-unit>
+        </div>
+    </div>
+</div>

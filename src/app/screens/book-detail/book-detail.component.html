@@ -1,0 +1,9 @@
+<div *ngIf="book== undefined">
+    <p class="text-danger">Loading...</p>
+</div>
+<div class="container" *ngIf="book!= undefined">
+    <h1 class="text-center">{{book.title}}</h1>
+    <img [src]="book.image" alt="" width="1000">
+    <p>Author: {{book.author.name}}</p>
+    <p>Author: {{book.category.name}}</p>
+</div>

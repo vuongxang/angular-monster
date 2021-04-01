@@ -1,0 +1,15 @@
+<a href="javascript:;" [routerLink]="['monster-detail',monsterData.id]">
+    <img [src]="monsterData.image" class="img-thumbnail">
+    <h2 class="text-center"><strong [innerHTML]="monsterData.name"></strong></h2>
+</a>
+<div class="text-center mt-2 mb-2">
+    <ng-container *ngIf="monsterData.spells != undefined"> 
+        <span *ngFor="let spell of monsterData.spells" class="badge text-white bg-danger">{{spell.name}}</span> 
+    </ng-container>
+</div>
+<div class="text-center">
+    <div class="btn-group">
+        <button (click)="updateMonster()" class="btn btn-outline-success">Update</button> 
+        <button class="btn btn-outline-danger" (click)="removeMonster()">Remove</button>
+    </div>
+</div>
